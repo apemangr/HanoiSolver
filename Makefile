@@ -14,7 +14,7 @@ SOURCES = $(wildcard $(SRCDIR)/*.cpp)
 OBJECTS = $(patsubst $(SRCDIR)/%.cpp, $(OBJDIR)/%.o, $(SOURCES))
 
 # Librerías y directorios de inclusión
-LIBS = -lSDL2 -lSDL2_ttf -mwindows
+LIBS = -lSDL2 -lSDL2_ttf
 INCLUDES = -Iinclude
 
 # Regla por defecto
