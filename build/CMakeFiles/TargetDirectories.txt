@@ -1,0 +1,4 @@
+C:/Users/apemangr/Desktop/Redo/build/CMakeFiles/HanoiSolver.dir
+C:/Users/apemangr/Desktop/Redo/build/CMakeFiles/run.dir
+C:/Users/apemangr/Desktop/Redo/build/CMakeFiles/edit_cache.dir
+C:/Users/apemangr/Desktop/Redo/build/CMakeFiles/rebuild_cache.dir
