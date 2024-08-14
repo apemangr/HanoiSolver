@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/apemangr/Desktop/Redo/src/Disk.cpp" "CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj.d"
-  "C:/Users/apemangr/Desktop/Redo/src/DiskManager.cpp" "CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj.d"
-  "C:/Users/apemangr/Desktop/Redo/src/Screen.cpp" "CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj.d"
-  "C:/Users/apemangr/Desktop/Redo/src/Towers.cpp" "CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj.d"
-  "C:/Users/apemangr/Desktop/Redo/src/main.cpp" "CMakeFiles/HanoiSolver.dir/src/main.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/main.cpp.obj.d"
+  "C:/Users/apemangr/Desktop/HanoiSolver/src/Disk.cpp" "CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj.d"
+  "C:/Users/apemangr/Desktop/HanoiSolver/src/DiskManager.cpp" "CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj.d"
+  "C:/Users/apemangr/Desktop/HanoiSolver/src/Screen.cpp" "CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj.d"
+  "C:/Users/apemangr/Desktop/HanoiSolver/src/Towers.cpp" "CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj.d"
+  "C:/Users/apemangr/Desktop/HanoiSolver/src/main.cpp" "CMakeFiles/HanoiSolver.dir/src/main.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

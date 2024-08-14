@@ -1,6 +1,7 @@
 #include "../include/DiskManager.hpp"
-#include "../include/Towers.hpp"
 #include "../include/main.hpp"
+#include "../include/Towers.hpp"
+
 #include <iostream>
 #include <array>
 #include <cmath>
@@ -18,65 +19,19 @@ void DiskManager::render()
 }
 
 void DiskManager::update(){
-//     for (const auto& disk : disks) {
-//         disk.update();
-//     }
-    // move_disk(disks[0], disks[0].get_x(), 30);
-    move_to_tower(disks[2], 0, 2);
+    move_to_tower(disks[2], 0, 1);
 }
-
-// bool DiskManager::move_to_tower(Disk &disk, int start_tower, int end_tower){
-//     // const bool move_one = false;
-//     // const bool move_two = false;
-//     // const bool move_thr = false;
-//
-//     // move_one
-//     if (disk.get_y() != SCREEN_WIDTH / 5 && TOWER_X_POS[start_tower] - disk.get_width() / 2 == disk.get_x()){
-//         if(move_disk(disk, TOWER_X_POS[start_tower] - disk.get_width() / 2, SCREEN_WIDTH / 5 )){
-//             std::cout << "Punto A logrado" << std::endl;
-//         }
-//     }
-//     // if (move_one && !move_two) {
-//     //     if(move_disk(disk, TOWER_X_POS[end_tower] - disk.get_width() / 2, SCREEN_WIDTH / 5)){
-//     //         move_two = true;
-//     //     }
-//     // }
-//
-//
-//     return true; 
-// }
-
-// bool DiskManager::move_to_tower(Disk &disk, int start_tower, int end_tower){
-//
-//     std::cout << TOWER_X_POS[end_tower]   - disk.get_width() / 2  + TOWER_PILAR_WIDTH / 2 << std::endl;
-//     std::cout << SCREEN_HEIGHT / 5 << std::endl;
-//     if(!move_disk(disk, TOWER_X_POS[start_tower] - disk.get_width() / 2 + TOWER_PILAR_WIDTH / 2, SCREEN_HEIGHT / 5)){
-//         std::cout << "Punto 1 -> X: " << disk.get_x() << " Y: " << disk.get_y() << std::endl;
-//         return false;
-//     }
-//
-//     if(!move_disk(disk, TOWER_X_POS[end_tower]   - disk.get_width() / 2  + TOWER_PILAR_WIDTH / 2, SCREEN_HEIGHT / 5)){
-//         std::cout << "Punto 2 -> X: " << disk.get_x() << " Y: " << disk.get_y() << std::endl;
-//         // std::cout << "Tower final: " << TOWER_X_POS[end_tower] << std::endl;
-//         return false;
-//     }
-//
-//     std::cout << "Punto 3 -> X: " << disk.get_x() << "Y: " << disk.get_y() << std::endl;
-//     return move_disk(disk, TOWER_X_POS[end_tower] - disk.get_width() / 2  , 500);
-//
-// }
-
-
 
 bool DiskManager::move_to_tower(Disk &disk, int start_tower, int end_tower) {
     static int current_point = 0;
     static int points[3][2] = {
         {disk.get_x(), SCREEN_HEIGHT / 5},
-        {TOWER_X_POS[end_tower] - disk.get_width() / 2, SCREEN_HEIGHT / 5}, 
-        {541, 300}
+        {TOWER_X_POS[end_tower] - disk.get_width() / 2 + TOWER_PILAR_WIDTH /2 , SCREEN_HEIGHT / 5}, 
+        {TOWER_X_POS[end_tower] - disk.get_width() / 2 + TOWER_PILAR_WIDTH /2 , 300}
+        // ( SCREEN_WIDTH  / 4 ) - disks[i].get_width() / 2
     };
 
-    static bool completed = false;
+   static bool completed = false;
 
     if(completed){
         return true;
@@ -147,7 +102,7 @@ bool DiskManager::move_disk(Disk &disk, int final_x, int final_y) {
 
 void DiskManager::initialize_disks(int disks_number){
     int base_width  = 150;
-    int base_height = 30;
+    int base_height = TOWER_BASE_HEIGHT;
     std::array<SDL_Color, 5> colors = {{
             {0x9a, 0x59, 0xb5, 0xFF},  // #9a59b5
             {0x34, 0x99, 0xdb, 0xFF},  // #3499db

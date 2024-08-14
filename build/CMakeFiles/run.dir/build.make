@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\apemangr\Desktop\Redo
+CMAKE_SOURCE_DIR = C:\Users\apemangr\Desktop\HanoiSolver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\apemangr\Desktop\Redo\build
+CMAKE_BINARY_DIR = C:\Users\apemangr\Desktop\HanoiSolver\build
 
 # Utility rule file for run.
 
@@ -66,7 +66,7 @@ include CMakeFiles/run.dir/compiler_depend.make
 include CMakeFiles/run.dir/progress.make
 
 CMakeFiles/run: HanoiSolver.exe
-	C:\Users\apemangr\Desktop\Redo\build\HanoiSolver
+	C:\Users\apemangr\Desktop\HanoiSolver\build\HanoiSolver
 
 run: CMakeFiles/run
 run: CMakeFiles/run.dir/build.make
@@ -81,6 +81,6 @@ CMakeFiles/run.dir/clean:
 .PHONY : CMakeFiles/run.dir/clean
 
 CMakeFiles/run.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\apemangr\Desktop\Redo C:\Users\apemangr\Desktop\Redo C:\Users\apemangr\Desktop\Redo\build C:\Users\apemangr\Desktop\Redo\build C:\Users\apemangr\Desktop\Redo\build\CMakeFiles\run.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\apemangr\Desktop\HanoiSolver C:\Users\apemangr\Desktop\HanoiSolver C:\Users\apemangr\Desktop\HanoiSolver\build C:\Users\apemangr\Desktop\HanoiSolver\build C:\Users\apemangr\Desktop\HanoiSolver\build\CMakeFiles\run.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/run.dir/depend
 

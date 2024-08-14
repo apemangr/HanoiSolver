@@ -1,6 +1,6 @@
 CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj: \
- C:\Users\apemangr\Desktop\Redo\src\Disk.cpp \
- C:/Users/apemangr/Desktop/Redo/include/Disk.hpp \
+ C:\Users\apemangr\Desktop\HanoiSolver\src\Disk.cpp \
+ C:/Users/apemangr/Desktop/HanoiSolver/include/Disk.hpp \
  C:/msys64/mingw64/include/SDL2/SDL.h \
  C:/msys64/mingw64/include/SDL2/SDL_main.h \
  C:/msys64/mingw64/include/SDL2/SDL_stdinc.h \
@@ -242,4 +242,4 @@ CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj: \
  C:/msys64/mingw64/include/SDL2/SDL_version.h \
  C:/msys64/mingw64/include/SDL2/SDL_locale.h \
  C:/msys64/mingw64/include/SDL2/SDL_misc.h \
- C:/Users/apemangr/Desktop/Redo/include/Screen.hpp
+ C:/Users/apemangr/Desktop/HanoiSolver/include/Screen.hpp

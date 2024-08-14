@@ -14,4 +14,5 @@ const int TOWER_X_POS[3] = {
     ( SCREEN_WIDTH / 4 ) * ( 2 + 1 ) - TOWER_PILAR_WIDTH / 2
 };
 
+
 #endif

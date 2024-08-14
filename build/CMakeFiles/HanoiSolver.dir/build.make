@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\apemangr\Desktop\Redo
+CMAKE_SOURCE_DIR = C:\Users\apemangr\Desktop\HanoiSolver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\apemangr\Desktop\Redo\build
+CMAKE_BINARY_DIR = C:\Users\apemangr\Desktop\HanoiSolver\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/HanoiSolver.dir/depend.make
@@ -70,78 +70,78 @@ include CMakeFiles/HanoiSolver.dir/flags.make
 
 CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj: CMakeFiles/HanoiSolver.dir/flags.make
 CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj: CMakeFiles/HanoiSolver.dir/includes_CXX.rsp
-CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj: C:/Users/apemangr/Desktop/Redo/src/Disk.cpp
+CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj: C:/Users/apemangr/Desktop/HanoiSolver/src/Disk.cpp
 CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj: CMakeFiles/HanoiSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\apemangr\Desktop\Redo\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj -MF CMakeFiles\HanoiSolver.dir\src\Disk.cpp.obj.d -o CMakeFiles\HanoiSolver.dir\src\Disk.cpp.obj -c C:\Users\apemangr\Desktop\Redo\src\Disk.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\apemangr\Desktop\HanoiSolver\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj -MF CMakeFiles\HanoiSolver.dir\src\Disk.cpp.obj.d -o CMakeFiles\HanoiSolver.dir\src\Disk.cpp.obj -c C:\Users\apemangr\Desktop\HanoiSolver\src\Disk.cpp
 
 CMakeFiles/HanoiSolver.dir/src/Disk.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HanoiSolver.dir/src/Disk.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\apemangr\Desktop\Redo\src\Disk.cpp > CMakeFiles\HanoiSolver.dir\src\Disk.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\apemangr\Desktop\HanoiSolver\src\Disk.cpp > CMakeFiles\HanoiSolver.dir\src\Disk.cpp.i
 
 CMakeFiles/HanoiSolver.dir/src/Disk.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HanoiSolver.dir/src/Disk.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\apemangr\Desktop\Redo\src\Disk.cpp -o CMakeFiles\HanoiSolver.dir\src\Disk.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\apemangr\Desktop\HanoiSolver\src\Disk.cpp -o CMakeFiles\HanoiSolver.dir\src\Disk.cpp.s
 
 CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: CMakeFiles/HanoiSolver.dir/flags.make
 CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: CMakeFiles/HanoiSolver.dir/includes_CXX.rsp
-CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: C:/Users/apemangr/Desktop/Redo/src/DiskManager.cpp
+CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: C:/Users/apemangr/Desktop/HanoiSolver/src/DiskManager.cpp
 CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: CMakeFiles/HanoiSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\apemangr\Desktop\Redo\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj -MF CMakeFiles\HanoiSolver.dir\src\DiskManager.cpp.obj.d -o CMakeFiles\HanoiSolver.dir\src\DiskManager.cpp.obj -c C:\Users\apemangr\Desktop\Redo\src\DiskManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\apemangr\Desktop\HanoiSolver\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj -MF CMakeFiles\HanoiSolver.dir\src\DiskManager.cpp.obj.d -o CMakeFiles\HanoiSolver.dir\src\DiskManager.cpp.obj -c C:\Users\apemangr\Desktop\HanoiSolver\src\DiskManager.cpp
 
 CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\apemangr\Desktop\Redo\src\DiskManager.cpp > CMakeFiles\HanoiSolver.dir\src\DiskManager.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\apemangr\Desktop\HanoiSolver\src\DiskManager.cpp > CMakeFiles\HanoiSolver.dir\src\DiskManager.cpp.i
 
 CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\apemangr\Desktop\Redo\src\DiskManager.cpp -o CMakeFiles\HanoiSolver.dir\src\DiskManager.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\apemangr\Desktop\HanoiSolver\src\DiskManager.cpp -o CMakeFiles\HanoiSolver.dir\src\DiskManager.cpp.s
 
 CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj: CMakeFiles/HanoiSolver.dir/flags.make
 CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj: CMakeFiles/HanoiSolver.dir/includes_CXX.rsp
-CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj: C:/Users/apemangr/Desktop/Redo/src/Screen.cpp
+CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj: C:/Users/apemangr/Desktop/HanoiSolver/src/Screen.cpp
 CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj: CMakeFiles/HanoiSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\apemangr\Desktop\Redo\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj -MF CMakeFiles\HanoiSolver.dir\src\Screen.cpp.obj.d -o CMakeFiles\HanoiSolver.dir\src\Screen.cpp.obj -c C:\Users\apemangr\Desktop\Redo\src\Screen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\apemangr\Desktop\HanoiSolver\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj -MF CMakeFiles\HanoiSolver.dir\src\Screen.cpp.obj.d -o CMakeFiles\HanoiSolver.dir\src\Screen.cpp.obj -c C:\Users\apemangr\Desktop\HanoiSolver\src\Screen.cpp
 
 CMakeFiles/HanoiSolver.dir/src/Screen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HanoiSolver.dir/src/Screen.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\apemangr\Desktop\Redo\src\Screen.cpp > CMakeFiles\HanoiSolver.dir\src\Screen.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\apemangr\Desktop\HanoiSolver\src\Screen.cpp > CMakeFiles\HanoiSolver.dir\src\Screen.cpp.i
 
 CMakeFiles/HanoiSolver.dir/src/Screen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HanoiSolver.dir/src/Screen.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\apemangr\Desktop\Redo\src\Screen.cpp -o CMakeFiles\HanoiSolver.dir\src\Screen.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\apemangr\Desktop\HanoiSolver\src\Screen.cpp -o CMakeFiles\HanoiSolver.dir\src\Screen.cpp.s
 
 CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj: CMakeFiles/HanoiSolver.dir/flags.make
 CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj: CMakeFiles/HanoiSolver.dir/includes_CXX.rsp
-CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj: C:/Users/apemangr/Desktop/Redo/src/Towers.cpp
+CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj: C:/Users/apemangr/Desktop/HanoiSolver/src/Towers.cpp
 CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj: CMakeFiles/HanoiSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\apemangr\Desktop\Redo\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj -MF CMakeFiles\HanoiSolver.dir\src\Towers.cpp.obj.d -o CMakeFiles\HanoiSolver.dir\src\Towers.cpp.obj -c C:\Users\apemangr\Desktop\Redo\src\Towers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\apemangr\Desktop\HanoiSolver\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj -MF CMakeFiles\HanoiSolver.dir\src\Towers.cpp.obj.d -o CMakeFiles\HanoiSolver.dir\src\Towers.cpp.obj -c C:\Users\apemangr\Desktop\HanoiSolver\src\Towers.cpp
 
 CMakeFiles/HanoiSolver.dir/src/Towers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HanoiSolver.dir/src/Towers.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\apemangr\Desktop\Redo\src\Towers.cpp > CMakeFiles\HanoiSolver.dir\src\Towers.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\apemangr\Desktop\HanoiSolver\src\Towers.cpp > CMakeFiles\HanoiSolver.dir\src\Towers.cpp.i
 
 CMakeFiles/HanoiSolver.dir/src/Towers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HanoiSolver.dir/src/Towers.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\apemangr\Desktop\Redo\src\Towers.cpp -o CMakeFiles\HanoiSolver.dir\src\Towers.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\apemangr\Desktop\HanoiSolver\src\Towers.cpp -o CMakeFiles\HanoiSolver.dir\src\Towers.cpp.s
 
 CMakeFiles/HanoiSolver.dir/src/main.cpp.obj: CMakeFiles/HanoiSolver.dir/flags.make
 CMakeFiles/HanoiSolver.dir/src/main.cpp.obj: CMakeFiles/HanoiSolver.dir/includes_CXX.rsp
-CMakeFiles/HanoiSolver.dir/src/main.cpp.obj: C:/Users/apemangr/Desktop/Redo/src/main.cpp
+CMakeFiles/HanoiSolver.dir/src/main.cpp.obj: C:/Users/apemangr/Desktop/HanoiSolver/src/main.cpp
 CMakeFiles/HanoiSolver.dir/src/main.cpp.obj: CMakeFiles/HanoiSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\apemangr\Desktop\Redo\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HanoiSolver.dir/src/main.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HanoiSolver.dir/src/main.cpp.obj -MF CMakeFiles\HanoiSolver.dir\src\main.cpp.obj.d -o CMakeFiles\HanoiSolver.dir\src\main.cpp.obj -c C:\Users\apemangr\Desktop\Redo\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\apemangr\Desktop\HanoiSolver\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HanoiSolver.dir/src/main.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HanoiSolver.dir/src/main.cpp.obj -MF CMakeFiles\HanoiSolver.dir\src\main.cpp.obj.d -o CMakeFiles\HanoiSolver.dir\src\main.cpp.obj -c C:\Users\apemangr\Desktop\HanoiSolver\src\main.cpp
 
 CMakeFiles/HanoiSolver.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HanoiSolver.dir/src/main.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\apemangr\Desktop\Redo\src\main.cpp > CMakeFiles\HanoiSolver.dir\src\main.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\apemangr\Desktop\HanoiSolver\src\main.cpp > CMakeFiles\HanoiSolver.dir\src\main.cpp.i
 
 CMakeFiles/HanoiSolver.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HanoiSolver.dir/src/main.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\apemangr\Desktop\Redo\src\main.cpp -o CMakeFiles\HanoiSolver.dir\src\main.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\apemangr\Desktop\HanoiSolver\src\main.cpp -o CMakeFiles\HanoiSolver.dir\src\main.cpp.s
 
 # Object files for target HanoiSolver
 HanoiSolver_OBJECTS = \
@@ -165,7 +165,7 @@ HanoiSolver.exe: C:/msys64/mingw64/lib/libSDL2.dll.a
 HanoiSolver.exe: CMakeFiles/HanoiSolver.dir/linkLibs.rsp
 HanoiSolver.exe: CMakeFiles/HanoiSolver.dir/objects1.rsp
 HanoiSolver.exe: CMakeFiles/HanoiSolver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\apemangr\Desktop\Redo\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable HanoiSolver.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\apemangr\Desktop\HanoiSolver\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable HanoiSolver.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\HanoiSolver.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -177,6 +177,6 @@ CMakeFiles/HanoiSolver.dir/clean:
 .PHONY : CMakeFiles/HanoiSolver.dir/clean
 
 CMakeFiles/HanoiSolver.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\apemangr\Desktop\Redo C:\Users\apemangr\Desktop\Redo C:\Users\apemangr\Desktop\Redo\build C:\Users\apemangr\Desktop\Redo\build C:\Users\apemangr\Desktop\Redo\build\CMakeFiles\HanoiSolver.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\apemangr\Desktop\HanoiSolver C:\Users\apemangr\Desktop\HanoiSolver C:\Users\apemangr\Desktop\HanoiSolver\build C:\Users\apemangr\Desktop\HanoiSolver\build C:\Users\apemangr\Desktop\HanoiSolver\build\CMakeFiles\HanoiSolver.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/HanoiSolver.dir/depend
 

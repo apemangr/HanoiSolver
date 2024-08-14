@@ -1,7 +1,7 @@
 CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: \
- C:\Users\apemangr\Desktop\Redo\src\DiskManager.cpp \
- C:/Users/apemangr/Desktop/Redo/include/DiskManager.hpp \
- C:/Users/apemangr/Desktop/Redo/include/Disk.hpp \
+ C:\Users\apemangr\Desktop\HanoiSolver\src\DiskManager.cpp \
+ C:/Users/apemangr/Desktop/HanoiSolver/include/DiskManager.hpp \
+ C:/Users/apemangr/Desktop/HanoiSolver/include/Disk.hpp \
  C:/msys64/mingw64/include/SDL2/SDL.h \
  C:/msys64/mingw64/include/SDL2/SDL_main.h \
  C:/msys64/mingw64/include/SDL2/SDL_stdinc.h \
@@ -270,9 +270,7 @@ CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.1.0/bits/uses_allocator.h \
  C:/msys64/mingw64/include/c++/14.1.0/bits/uses_allocator_args.h \
  C:/msys64/mingw64/include/c++/14.1.0/tuple \
- C:/Users/apemangr/Desktop/Redo/include/Towers.hpp \
- C:/msys64/mingw64/include/SDL2/SDL_rect.h \
- C:/Users/apemangr/Desktop/Redo/include/main.hpp \
+ C:/Users/apemangr/Desktop/HanoiSolver/include/main.hpp \
  C:/msys64/mingw64/include/c++/14.1.0/iostream \
  C:/msys64/mingw64/include/c++/14.1.0/ostream \
  C:/msys64/mingw64/include/c++/14.1.0/ios \

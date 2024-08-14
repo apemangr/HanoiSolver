@@ -12,8 +12,8 @@ public:
     void render() const;
     int  get_width();
     int  get_height();
-    int get_x(){ return rect.x; }
-    int get_y(){ return rect.y; }
+    int  get_x(){ return rect.x; }
+    int  get_y(){ return rect.y; }
     void set_animating(bool new_state){ is_animating = new_state; }
     bool get_animating(){ return is_animating; }
     
