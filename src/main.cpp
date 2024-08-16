@@ -1,4 +1,4 @@
-#define main SDL_main
+#define SDL_MAIN_HANDLED
 
 #include "../include/Screen.hpp"
 #include "../include/main.hpp"

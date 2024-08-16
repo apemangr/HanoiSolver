@@ -7,7 +7,7 @@
 
 SDL_Renderer *Screen::renderer = nullptr;
 Towers *towers;
-
+TTF_Font *font = TTF_OpenFont("assets/Sporta.ttf", 24);
 DiskManager *disks;
 
 Screen::Screen(){}
@@ -35,6 +35,14 @@ void Screen::init(const char* title, int xpos, int ypos, int width, int height, 
         is_running = true;
         towers = new Towers();
         disks = new DiskManager(DISKS_NUMBER);
+
+        if(TTF_Init() == 0){
+            std::cout << "[\033[32m OK \033[0m] Fonts initialized correctly!" << std::endl;
+        }
+        if(font){
+            std::cout << "[\033[32m OK \033[0m] Font Sporta loaded!" << std::endl;
+        }
+
 
     } else {
         is_running = false;
