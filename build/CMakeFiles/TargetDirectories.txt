@@ -1,4 +1,0 @@
-C:/Users/apemangr/Desktop/HanoiSolver/build/CMakeFiles/HanoiSolver.dir
-C:/Users/apemangr/Desktop/HanoiSolver/build/CMakeFiles/run.dir
-C:/Users/apemangr/Desktop/HanoiSolver/build/CMakeFiles/edit_cache.dir
-C:/Users/apemangr/Desktop/HanoiSolver/build/CMakeFiles/rebuild_cache.dir
