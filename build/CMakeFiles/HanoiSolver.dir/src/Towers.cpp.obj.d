@@ -93,7 +93,6 @@ CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj: \
  C:/msys64/mingw64/include/SDL2/SDL_pixels.h \
  C:/msys64/mingw64/include/SDL2/SDL_endian.h \
  C:/msys64/mingw64/include/SDL2/SDL_rwops.h \
- C:/Users/apemangr/Desktop/HanoiSolver/include/main.hpp \
  C:/Users/apemangr/Desktop/HanoiSolver/include/Screen.hpp \
  C:/msys64/mingw64/include/SDL2/SDL.h \
  C:/msys64/mingw64/include/SDL2/SDL_main.h \

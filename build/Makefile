@@ -189,6 +189,30 @@ src/DiskManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\HanoiSolver.dir\build.make CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.s
 .PHONY : src/DiskManager.cpp.s
 
+src/Hanoi.obj: src/Hanoi.cpp.obj
+.PHONY : src/Hanoi.obj
+
+# target to build an object file
+src/Hanoi.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HanoiSolver.dir\build.make CMakeFiles/HanoiSolver.dir/src/Hanoi.cpp.obj
+.PHONY : src/Hanoi.cpp.obj
+
+src/Hanoi.i: src/Hanoi.cpp.i
+.PHONY : src/Hanoi.i
+
+# target to preprocess a source file
+src/Hanoi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HanoiSolver.dir\build.make CMakeFiles/HanoiSolver.dir/src/Hanoi.cpp.i
+.PHONY : src/Hanoi.cpp.i
+
+src/Hanoi.s: src/Hanoi.cpp.s
+.PHONY : src/Hanoi.s
+
+# target to generate assembly for a file
+src/Hanoi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HanoiSolver.dir\build.make CMakeFiles/HanoiSolver.dir/src/Hanoi.cpp.s
+.PHONY : src/Hanoi.cpp.s
+
 src/Screen.obj: src/Screen.cpp.obj
 .PHONY : src/Screen.obj
 
@@ -277,6 +301,9 @@ help:
 	@echo ... src/DiskManager.obj
 	@echo ... src/DiskManager.i
 	@echo ... src/DiskManager.s
+	@echo ... src/Hanoi.obj
+	@echo ... src/Hanoi.i
+	@echo ... src/Hanoi.s
 	@echo ... src/Screen.obj
 	@echo ... src/Screen.i
 	@echo ... src/Screen.s

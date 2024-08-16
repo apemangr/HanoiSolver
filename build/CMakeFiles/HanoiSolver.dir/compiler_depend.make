@@ -253,6 +253,7 @@ CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj: C:/Users/apemangr/Desktop/HanoiSolv
 CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: C:/Users/apemangr/Desktop/HanoiSolver/src/DiskManager.cpp \
   C:/Users/apemangr/Desktop/HanoiSolver/include/Disk.hpp \
   C:/Users/apemangr/Desktop/HanoiSolver/include/DiskManager.hpp \
+  C:/Users/apemangr/Desktop/HanoiSolver/include/Towers.hpp \
   C:/Users/apemangr/Desktop/HanoiSolver/include/main.hpp \
   C:/msys64/mingw64/include/SDL2/SDL.h \
   C:/msys64/mingw64/include/SDL2/SDL_assert.h \
@@ -326,6 +327,7 @@ CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: C:/Users/apemangr/Desktop/Ha
   C:/msys64/mingw64/include/c++/14.1.0/bits/cpp_type_traits.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/cxxabi_forced.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/cxxabi_init_exception.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/deque.tcc \
   C:/msys64/mingw64/include/c++/14.1.0/bits/exception.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/exception_defines.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/exception_ptr.h \
@@ -358,11 +360,13 @@ CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: C:/Users/apemangr/Desktop/Ha
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_algobase.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_bvector.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_construct.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_deque.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_function.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_iterator.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_iterator_base_types.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_pair.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_stack.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_uninitialized.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_vector.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/streambuf.tcc \
@@ -387,6 +391,7 @@ CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: C:/Users/apemangr/Desktop/Ha
   C:/msys64/mingw64/include/c++/14.1.0/cwctype \
   C:/msys64/mingw64/include/c++/14.1.0/debug/assertions.h \
   C:/msys64/mingw64/include/c++/14.1.0/debug/debug.h \
+  C:/msys64/mingw64/include/c++/14.1.0/deque \
   C:/msys64/mingw64/include/c++/14.1.0/exception \
   C:/msys64/mingw64/include/c++/14.1.0/ext/alloc_traits.h \
   C:/msys64/mingw64/include/c++/14.1.0/ext/atomicity.h \
@@ -403,6 +408,7 @@ CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: C:/Users/apemangr/Desktop/Ha
   C:/msys64/mingw64/include/c++/14.1.0/new \
   C:/msys64/mingw64/include/c++/14.1.0/ostream \
   C:/msys64/mingw64/include/c++/14.1.0/pstl/pstl_config.h \
+  C:/msys64/mingw64/include/c++/14.1.0/stack \
   C:/msys64/mingw64/include/c++/14.1.0/stdexcept \
   C:/msys64/mingw64/include/c++/14.1.0/stdlib.h \
   C:/msys64/mingw64/include/c++/14.1.0/streambuf \
@@ -592,6 +598,71 @@ CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: C:/Users/apemangr/Desktop/Ha
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/xsavesintrin.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/xtestintrin.h
 
+CMakeFiles/HanoiSolver.dir/src/Hanoi.cpp.obj: C:/Users/apemangr/Desktop/HanoiSolver/src/Hanoi.cpp \
+  C:/Users/apemangr/Desktop/HanoiSolver/include/Hanoi.hpp \
+  C:/msys64/mingw64/include/_mingw.h \
+  C:/msys64/mingw64/include/_mingw_mac.h \
+  C:/msys64/mingw64/include/_mingw_secapi.h \
+  C:/msys64/mingw64/include/c++/14.1.0/backward/binders.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bit \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/alloc_traits.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/allocator.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/concept_check.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/cpp_type_traits.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/exception.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/exception_defines.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/functexcept.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/functional_hash.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/hash_bytes.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/invoke.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/memory_resource.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/memoryfwd.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/move.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/new_allocator.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/predefined_ops.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/ptr_traits.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/range_access.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/refwrap.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/requires_hosted.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_algobase.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_bvector.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_construct.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_function.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_iterator.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_iterator_base_funcs.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_iterator_base_types.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_pair.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_uninitialized.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_vector.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/uses_allocator.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/uses_allocator_args.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/utility.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/vector.tcc \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/version.h \
+  C:/msys64/mingw64/include/c++/14.1.0/concepts \
+  C:/msys64/mingw64/include/c++/14.1.0/cstddef \
+  C:/msys64/mingw64/include/c++/14.1.0/debug/assertions.h \
+  C:/msys64/mingw64/include/c++/14.1.0/debug/debug.h \
+  C:/msys64/mingw64/include/c++/14.1.0/ext/alloc_traits.h \
+  C:/msys64/mingw64/include/c++/14.1.0/ext/numeric_traits.h \
+  C:/msys64/mingw64/include/c++/14.1.0/ext/type_traits.h \
+  C:/msys64/mingw64/include/c++/14.1.0/initializer_list \
+  C:/msys64/mingw64/include/c++/14.1.0/new \
+  C:/msys64/mingw64/include/c++/14.1.0/pstl/pstl_config.h \
+  C:/msys64/mingw64/include/c++/14.1.0/tuple \
+  C:/msys64/mingw64/include/c++/14.1.0/type_traits \
+  C:/msys64/mingw64/include/c++/14.1.0/vector \
+  C:/msys64/mingw64/include/c++/14.1.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/msys64/mingw64/include/c++/14.1.0/x86_64-w64-mingw32/bits/c++config.h \
+  C:/msys64/mingw64/include/c++/14.1.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/msys64/mingw64/include/c++/14.1.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/mingw64/include/corecrt.h \
+  C:/msys64/mingw64/include/crtdefs.h \
+  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
+  C:/msys64/mingw64/include/stddef.h \
+  C:/msys64/mingw64/include/vadefs.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/stddef.h
+
 CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj: C:/Users/apemangr/Desktop/HanoiSolver/src/Screen.cpp \
   C:/Users/apemangr/Desktop/HanoiSolver/include/Disk.hpp \
   C:/Users/apemangr/Desktop/HanoiSolver/include/DiskManager.hpp \
@@ -669,6 +740,7 @@ CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj: C:/Users/apemangr/Desktop/HanoiSo
   C:/msys64/mingw64/include/c++/14.1.0/bits/cpp_type_traits.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/cxxabi_forced.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/cxxabi_init_exception.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/deque.tcc \
   C:/msys64/mingw64/include/c++/14.1.0/bits/exception.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/exception_defines.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/exception_ptr.h \
@@ -701,11 +773,13 @@ CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj: C:/Users/apemangr/Desktop/HanoiSo
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_algobase.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_bvector.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_construct.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_deque.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_function.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_iterator.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_iterator_base_types.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_pair.h \
+  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_stack.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_uninitialized.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/stl_vector.h \
   C:/msys64/mingw64/include/c++/14.1.0/bits/streambuf.tcc \
@@ -729,6 +803,7 @@ CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj: C:/Users/apemangr/Desktop/HanoiSo
   C:/msys64/mingw64/include/c++/14.1.0/cwctype \
   C:/msys64/mingw64/include/c++/14.1.0/debug/assertions.h \
   C:/msys64/mingw64/include/c++/14.1.0/debug/debug.h \
+  C:/msys64/mingw64/include/c++/14.1.0/deque \
   C:/msys64/mingw64/include/c++/14.1.0/exception \
   C:/msys64/mingw64/include/c++/14.1.0/ext/alloc_traits.h \
   C:/msys64/mingw64/include/c++/14.1.0/ext/atomicity.h \
@@ -745,6 +820,7 @@ CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj: C:/Users/apemangr/Desktop/HanoiSo
   C:/msys64/mingw64/include/c++/14.1.0/new \
   C:/msys64/mingw64/include/c++/14.1.0/ostream \
   C:/msys64/mingw64/include/c++/14.1.0/pstl/pstl_config.h \
+  C:/msys64/mingw64/include/c++/14.1.0/stack \
   C:/msys64/mingw64/include/c++/14.1.0/stdexcept \
   C:/msys64/mingw64/include/c++/14.1.0/stdlib.h \
   C:/msys64/mingw64/include/c++/14.1.0/streambuf \
@@ -1510,6 +1586,8 @@ C:/msys64/mingw64/include/SDL2/SDL_pixels.h:
 
 C:/msys64/mingw64/include/SDL2/SDL_events.h:
 
+C:/msys64/mingw64/include/c++/14.1.0/stack:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/uintrintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/fma4intrin.h:
@@ -1742,6 +1820,8 @@ C:/msys64/mingw64/include/c++/14.1.0/bits/uses_allocator.h:
 
 C:/msys64/mingw64/include/c++/14.1.0/tr1/riemann_zeta.tcc:
 
+C:/msys64/mingw64/include/c++/14.1.0/bits/stl_stack.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/amxfp16intrin.h:
 
 C:/msys64/mingw64/include/c++/14.1.0/tr1/special_function_util.h:
@@ -1912,6 +1992,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/avxvnniint8intrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/avxvnniintrin.h:
 
+C:/Users/apemangr/Desktop/HanoiSolver/src/Hanoi.cpp:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/bmiintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/clflushoptintrin.h:
@@ -2006,6 +2088,8 @@ C:/msys64/mingw64/include/c++/14.1.0/typeinfo:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/xtestintrin.h:
 
+C:/Users/apemangr/Desktop/HanoiSolver/include/Towers.hpp:
+
 C:/Users/apemangr/Desktop/HanoiSolver/include/main.hpp:
 
 C:/msys64/mingw64/include/_timeval.h:
@@ -2021,6 +2105,8 @@ C:/msys64/mingw64/include/c++/14.1.0/bits/basic_string.tcc:
 C:/msys64/mingw64/include/c++/14.1.0/bits/cxxabi_forced.h:
 
 C:/msys64/mingw64/include/c++/14.1.0/bits/cxxabi_init_exception.h:
+
+C:/msys64/mingw64/include/c++/14.1.0/bits/deque.tcc:
 
 C:/msys64/mingw64/include/c++/14.1.0/bits/exception_ptr.h:
 
@@ -2062,6 +2148,8 @@ C:/msys64/mingw64/include/c++/14.1.0/bits/stl_bvector.h:
 
 C:/msys64/mingw64/include/c++/14.1.0/bits/stl_construct.h:
 
+C:/msys64/mingw64/include/c++/14.1.0/bits/stl_deque.h:
+
 C:/msys64/mingw64/include/c++/14.1.0/bits/stl_function.h:
 
 C:/msys64/mingw64/include/c++/14.1.0/bits/stl_uninitialized.h:
@@ -2079,6 +2167,8 @@ C:/msys64/mingw64/include/c++/14.1.0/cerrno:
 C:/msys64/mingw64/include/c++/14.1.0/cstddef:
 
 C:/msys64/mingw64/include/c++/14.1.0/cstdio:
+
+C:/msys64/mingw64/include/c++/14.1.0/deque:
 
 C:/msys64/mingw64/include/c++/14.1.0/ext/string_conversions.h:
 
@@ -2122,8 +2212,8 @@ C:/msys64/mingw64/include/time.h:
 
 C:/msys64/mingw64/include/wctype.h:
 
-C:/Users/apemangr/Desktop/HanoiSolver/src/Screen.cpp:
+C:/Users/apemangr/Desktop/HanoiSolver/include/Hanoi.hpp:
 
-C:/Users/apemangr/Desktop/HanoiSolver/include/Towers.hpp:
+C:/Users/apemangr/Desktop/HanoiSolver/src/Screen.cpp:
 
 C:/Users/apemangr/Desktop/HanoiSolver/src/Towers.cpp:

@@ -7,6 +7,7 @@
 
 SDL_Renderer *Screen::renderer = nullptr;
 Towers *towers;
+
 DiskManager *disks;
 
 Screen::Screen(){}
@@ -53,7 +54,7 @@ void Screen::handle_events(){
 }
 
 void Screen::update(){
-    disks->update();
+    disks->update(*towers);
 }
 
 void Screen::render(){

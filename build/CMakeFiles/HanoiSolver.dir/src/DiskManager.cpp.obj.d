@@ -1,9 +1,8 @@
 CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: \
  C:\Users\apemangr\Desktop\HanoiSolver\src\DiskManager.cpp \
  C:/Users/apemangr/Desktop/HanoiSolver/include/DiskManager.hpp \
- C:/Users/apemangr/Desktop/HanoiSolver/include/Disk.hpp \
- C:/msys64/mingw64/include/SDL2/SDL.h \
- C:/msys64/mingw64/include/SDL2/SDL_main.h \
+ C:/Users/apemangr/Desktop/HanoiSolver/include/Towers.hpp \
+ C:/msys64/mingw64/include/SDL2/SDL_rect.h \
  C:/msys64/mingw64/include/SDL2/SDL_stdinc.h \
  C:/msys64/mingw64/include/SDL2/SDL_config.h \
  C:/msys64/mingw64/include/SDL2/SDL_platform.h \
@@ -91,16 +90,20 @@ CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.1.0/tr1/riemann_zeta.tcc \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/float.h \
  C:/msys64/mingw64/include/float.h \
+ C:/msys64/mingw64/include/SDL2/SDL_error.h \
+ C:/msys64/mingw64/include/SDL2/SDL_pixels.h \
+ C:/msys64/mingw64/include/SDL2/SDL_endian.h \
+ C:/msys64/mingw64/include/SDL2/SDL_rwops.h \
+ C:/Users/apemangr/Desktop/HanoiSolver/include/Disk.hpp \
+ C:/msys64/mingw64/include/SDL2/SDL.h \
+ C:/msys64/mingw64/include/SDL2/SDL_main.h \
  C:/msys64/mingw64/include/SDL2/SDL_assert.h \
  C:/msys64/mingw64/include/SDL2/SDL_atomic.h \
  C:/msys64/mingw64/include/SDL2/SDL_audio.h \
- C:/msys64/mingw64/include/SDL2/SDL_error.h \
- C:/msys64/mingw64/include/SDL2/SDL_endian.h \
  C:/msys64/mingw64/include/SDL2/SDL_mutex.h \
  C:/msys64/mingw64/include/SDL2/SDL_thread.h \
  C:/msys64/mingw64/include/process.h \
  C:/msys64/mingw64/include/corecrt_startup.h \
- C:/msys64/mingw64/include/SDL2/SDL_rwops.h \
  C:/msys64/mingw64/include/SDL2/SDL_clipboard.h \
  C:/msys64/mingw64/include/SDL2/SDL_cpuinfo.h \
  C:/msys64/mingw64/include/intrin.h C:/msys64/mingw64/include/setjmp.h \
@@ -212,7 +215,6 @@ CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/cpuid.h \
  C:/msys64/mingw64/include/SDL2/SDL_events.h \
  C:/msys64/mingw64/include/SDL2/SDL_video.h \
- C:/msys64/mingw64/include/SDL2/SDL_pixels.h \
  C:/msys64/mingw64/include/SDL2/SDL_rect.h \
  C:/msys64/mingw64/include/SDL2/SDL_surface.h \
  C:/msys64/mingw64/include/SDL2/SDL_blendmode.h \
@@ -243,7 +245,8 @@ CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: \
  C:/msys64/mingw64/include/SDL2/SDL_version.h \
  C:/msys64/mingw64/include/SDL2/SDL_locale.h \
  C:/msys64/mingw64/include/SDL2/SDL_misc.h \
- C:/msys64/mingw64/include/c++/14.1.0/vector \
+ C:/msys64/mingw64/include/c++/14.1.0/stack \
+ C:/msys64/mingw64/include/c++/14.1.0/deque \
  C:/msys64/mingw64/include/c++/14.1.0/bits/allocator.h \
  C:/msys64/mingw64/include/c++/14.1.0/x86_64-w64-mingw32/bits/c++allocator.h \
  C:/msys64/mingw64/include/c++/14.1.0/bits/new_allocator.h \
@@ -254,22 +257,26 @@ CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_uninitialized.h \
  C:/msys64/mingw64/include/c++/14.1.0/ext/alloc_traits.h \
  C:/msys64/mingw64/include/c++/14.1.0/bits/alloc_traits.h \
- C:/msys64/mingw64/include/c++/14.1.0/bits/stl_vector.h \
+ C:/msys64/mingw64/include/c++/14.1.0/bits/stl_deque.h \
  C:/msys64/mingw64/include/c++/14.1.0/initializer_list \
- C:/msys64/mingw64/include/c++/14.1.0/bits/stl_bvector.h \
- C:/msys64/mingw64/include/c++/14.1.0/bits/functional_hash.h \
- C:/msys64/mingw64/include/c++/14.1.0/bits/hash_bytes.h \
  C:/msys64/mingw64/include/c++/14.1.0/bits/refwrap.h \
  C:/msys64/mingw64/include/c++/14.1.0/bits/invoke.h \
  C:/msys64/mingw64/include/c++/14.1.0/bits/stl_function.h \
  C:/msys64/mingw64/include/c++/14.1.0/backward/binders.h \
  C:/msys64/mingw64/include/c++/14.1.0/bits/range_access.h \
- C:/msys64/mingw64/include/c++/14.1.0/bits/vector.tcc \
+ C:/msys64/mingw64/include/c++/14.1.0/bits/deque.tcc \
  C:/msys64/mingw64/include/c++/14.1.0/bits/memory_resource.h \
  C:/msys64/mingw64/include/c++/14.1.0/cstddef \
  C:/msys64/mingw64/include/c++/14.1.0/bits/uses_allocator.h \
  C:/msys64/mingw64/include/c++/14.1.0/bits/uses_allocator_args.h \
  C:/msys64/mingw64/include/c++/14.1.0/tuple \
+ C:/msys64/mingw64/include/c++/14.1.0/bits/stl_stack.h \
+ C:/msys64/mingw64/include/c++/14.1.0/vector \
+ C:/msys64/mingw64/include/c++/14.1.0/bits/stl_vector.h \
+ C:/msys64/mingw64/include/c++/14.1.0/bits/stl_bvector.h \
+ C:/msys64/mingw64/include/c++/14.1.0/bits/functional_hash.h \
+ C:/msys64/mingw64/include/c++/14.1.0/bits/hash_bytes.h \
+ C:/msys64/mingw64/include/c++/14.1.0/bits/vector.tcc \
  C:/Users/apemangr/Desktop/HanoiSolver/include/main.hpp \
  C:/msys64/mingw64/include/c++/14.1.0/iostream \
  C:/msys64/mingw64/include/c++/14.1.0/ostream \

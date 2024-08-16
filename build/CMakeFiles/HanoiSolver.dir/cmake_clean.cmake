@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj.d"
   "CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj"
   "CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj.d"
+  "CMakeFiles/HanoiSolver.dir/src/Hanoi.cpp.obj"
+  "CMakeFiles/HanoiSolver.dir/src/Hanoi.cpp.obj.d"
   "CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj"
   "CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj.d"
   "CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj"

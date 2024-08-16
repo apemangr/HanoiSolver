@@ -14,16 +14,8 @@ Towers::Towers() {
         tower_base[i].h  = TOWER_BASE_HEIGHT;
         tower_base[i].w  = TOWER_BASE_WIDTH;
     }
-    tower_offset[0] = DISKS_NUMBER * TOWER_BASE_HEIGHT;
-    for(int i = 1; i < DISKS_NUMBER; i++){
-        tower_offset[i] = 0;
-    }
 }
-
-int Towers::get_tower_offset(Towers *tower, int tower_number){
-    return tower->tower_offset[tower_number];
-}
-
+// DISKS_NUMBER * 
 void Towers::render() {
 
     SDL_SetRenderDrawColor(Screen::renderer, 255, 255, 255, 255);

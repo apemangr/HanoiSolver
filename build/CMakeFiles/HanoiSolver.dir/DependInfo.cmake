@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/apemangr/Desktop/HanoiSolver/src/Disk.cpp" "CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/Disk.cpp.obj.d"
   "C:/Users/apemangr/Desktop/HanoiSolver/src/DiskManager.cpp" "CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/DiskManager.cpp.obj.d"
+  "C:/Users/apemangr/Desktop/HanoiSolver/src/Hanoi.cpp" "CMakeFiles/HanoiSolver.dir/src/Hanoi.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/Hanoi.cpp.obj.d"
   "C:/Users/apemangr/Desktop/HanoiSolver/src/Screen.cpp" "CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/Screen.cpp.obj.d"
   "C:/Users/apemangr/Desktop/HanoiSolver/src/Towers.cpp" "CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/Towers.cpp.obj.d"
   "C:/Users/apemangr/Desktop/HanoiSolver/src/main.cpp" "CMakeFiles/HanoiSolver.dir/src/main.cpp.obj" "gcc" "CMakeFiles/HanoiSolver.dir/src/main.cpp.obj.d"
