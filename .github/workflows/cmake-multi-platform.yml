@@ -20,22 +20,15 @@ jobs:
 
     - name: Set reusable strings
       id: strings
-      shell: bash
-      run: |
-        echo "build-output-dir=${{ github.workspace }}/build" >> "$GITHUB_OUTPUT"
+      run: echo "build-output-dir=${{ github.workspace }}\build" >> $env:GITHUB_ENV
 
     - name: Configure CMake
       run: |
-        cmake -B ${{ steps.strings.outputs.build-output-dir }} \
-          -G "MinGW Makefiles" \
-          -DCMAKE_CXX_COMPILER=g++ \
-          -DCMAKE_C_COMPILER=gcc \
-          -DCMAKE_BUILD_TYPE=Release \
-          -S ${{ github.workspace }}
+        cmake -B $env:build-output-dir -G "MinGW Makefiles" -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc -DCMAKE_BUILD_TYPE=Release -S $env:GITHUB_WORKSPACE
 
     - name: Build
-      run: cmake --build ${{ steps.strings.outputs.build-output-dir }}
+      run: cmake --build $env:build-output-dir
 
     - name: Test
-      working-directory: ${{ steps.strings.outputs.build-output-dir }}
+      working-directory: ${{ env.build-output-dir }}
       run: ctest
