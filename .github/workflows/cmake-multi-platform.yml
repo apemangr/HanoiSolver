@@ -1,42 +1,39 @@
-name: CMake Build with SDL2 and SDL2_ttf
+name: CMake Build with SDL2
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "main" ]
+
+env:
+  BUILD_TYPE: Release
 
 jobs:
   build:
     runs-on: windows-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v3
 
-    - name: Setup MSYS2
-      uses: msys2/setup-msys2@v1
+    - name: Install MinGW
+      uses: egor-tensin/setup-mingw@v2
       with:
-        msys2-version: '202308'
-        update: true
-        packages: 'mingw-w64-x86_64-toolchain'
+        platform: x64
 
     - name: Install SDL2 and SDL2_ttf
       run: |
-        pacman -S --noconfirm mingw-w64-x86_64-SDL2 mingw-w64-x86_64-SDL2_ttf
-
-    - name: Setup CMake
-      uses: scikit-build/scikit-build-action@v1
-      with:
-        cmake-version: '3.26.2'
+        choco install sdl2 sdl2_ttf
+        echo "SDL2_DIR=C:/tools/SDL2-2.26.5/cmake" >> $GITHUB_ENV
+        echo "SDL2_TTF_DIR=C:/tools/SDL2_ttf-2.20.2/cmake" >> $GITHUB_ENV
 
     - name: Configure CMake
-      run: cmake -Bbuild -G "MinGW Makefiles"
+      run: |
+        cmake -B ${{github.workspace}}/build -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
 
     - name: Build
-      run: cmake --build build
+      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
 
-    - name: Run Tests
-      run: ctest --test-dir build
+    - name: Test
+      working-directory: ${{github.workspace}}/build
+      run: ctest -C ${{env.BUILD_TYPE}}
