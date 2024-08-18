@@ -1,4 +1,4 @@
-name: Build with MinGW Makefiles
+name: Build with MinGW Makefiles and SDL2
 
 on:
   push:
@@ -13,13 +13,19 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Install dependencies
+    - name: Install MinGW and CMake
       run: |
         choco install mingw -y
         choco install cmake -y
 
+    - name: Install SDL2 and SDL2_ttf
+      run: |
+        curl -LO https://www.libsdl.org/release/SDL2-devel-2.26.5-mingw.zip
+        curl -LO https://www.libsdl.org/projects/SDL_ttf/release/SDL2_ttf-devel-2.20.1-mingw.zip
+        7z x SDL2-devel-2.26.5-mingw.zip -oC:/msys64/mingw64
+        7z x SDL2_ttf-devel-2.20.1-mingw.zip -oC:/msys64/mingw64
+
     - name: Set reusable strings
-      id: strings
       run: echo "build-output-dir=${{ github.workspace }}\build" >> $env:GITHUB_ENV
 
     - name: Configure CMake
