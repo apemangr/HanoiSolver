@@ -24,7 +24,7 @@ jobs:
         install: >-
           mingw-w64-x86_64-toolchain
           mingw-w64-x86_64-cmake
-          mingw-w64-x86_64-ninja
+          make
 
     - name: Install SDL2 and SDL2_ttf
       shell: msys2 {0}
@@ -36,7 +36,7 @@ jobs:
     - name: Configure CMake
       shell: msys2 {0}
       run: |
-        cmake -B ${{github.workspace}}/build -G "Ninja" -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+        cmake -B ${{github.workspace}}/build -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
 
     - name: Build
       shell: msys2 {0}
