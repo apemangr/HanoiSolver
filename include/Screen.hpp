@@ -15,6 +15,7 @@ public:
     void update();
     void render();
     void clean();
+    void render_text(TTF_Font *font);
     bool running(){ return is_running;}
     static SDL_Renderer *renderer;
 

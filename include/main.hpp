@@ -3,7 +3,7 @@
 
 const int SCREEN_WIDTH  = 800;
 const int SCREEN_HEIGHT = 640;
-const int DISKS_NUMBER  = 6;
+const int DISKS_NUMBER  = 5;
 const int TOWER_BASE_HEIGHT  = 30;
 const int TOWER_BASE_WIDTH   = 180;
 const int TOWER_PILAR_HEIGHT = 200;

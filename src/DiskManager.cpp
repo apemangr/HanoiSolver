@@ -93,7 +93,7 @@ bool DiskManager::move_disk(Disk &disk, int final_x, int final_y) {
     int sy = disk.get_y() < final_y ? 1 : -1;
 
     // Aumenta la cantidad de píxeles que se mueve el disco en cada paso
-    int step_size = 18; // Puedes ajustar este valor para aumentar o reducir la velocidad
+    int step_size = 15; // Puedes ajustar este valor para aumentar o reducir la velocidad
 
     int err = dx - dy;
     int e2;
