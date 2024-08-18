@@ -13,28 +13,26 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Install MinGW and CMake
+    - name: Install MSYS2 and update packages
       run: |
-        choco install mingw -y
-        choco install cmake -y
+        choco install msys2 -y
+        C:\msys64\usr\bin\bash -lc "pacman -Syu --noconfirm"
 
-    - name: Install SDL2 and SDL2_ttf
+    - name: Install MinGW, SDL2, and SDL2_ttf
       run: |
-        curl -LO https://www.libsdl.org/release/SDL2-devel-2.26.5-mingw.zip
-        curl -LO https://www.libsdl.org/projects/SDL_ttf/release/SDL2_ttf-devel-2.20.1-mingw.zip
-        7z x SDL2-devel-2.26.5-mingw.zip -oC:/msys64/mingw64
-        7z x SDL2_ttf-devel-2.20.1-mingw.zip -oC:/msys64/mingw64
+        C:\msys64\usr\bin\bash -lc "pacman -S --noconfirm mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake"
+        C:\msys64\usr\bin\bash -lc "pacman -S --noconfirm mingw-w64-x86_64-SDL2 mingw-w64-x86_64-SDL2_ttf"
 
     - name: Set reusable strings
       run: echo "build-output-dir=${{ github.workspace }}\build" >> $env:GITHUB_ENV
 
     - name: Configure CMake
       run: |
-        cmake -B $env:GITHUB_WORKSPACE/build -G "MinGW Makefiles" -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc -DCMAKE_BUILD_TYPE=Release -S $env:GITHUB_WORKSPACE
+        C:\msys64\usr\bin\bash -lc "cmake -B $env:GITHUB_WORKSPACE/build -G 'MinGW Makefiles' -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc -DCMAKE_BUILD_TYPE=Release -S $env:GITHUB_WORKSPACE"
 
     - name: Build
-      run: cmake --build $env:GITHUB_WORKSPACE/build
+      run: C:\msys64\usr\bin\bash -lc "cmake --build $env:GITHUB_WORKSPACE/build"
 
     - name: Test
       working-directory: ${{ env.GITHUB_WORKSPACE }}/build
-      run: ctest
+      run: C:\msys64\usr\bin\bash -lc "ctest"
