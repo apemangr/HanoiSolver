@@ -1,0 +1,53 @@
+name: CMake Build with SDL2
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup MSYS2
+      uses: msys2/setup-msys2@v2
+      with:
+        msystem: MINGW64
+        update: true
+        install: >-
+          mingw-w64-x86_64-toolchain
+          mingw-w64-x86_64-cmake
+          make
+
+    - name: Install SDL2 and SDL2_ttf
+      shell: msys2 {0}
+      run: |
+        pacman -S --noconfirm mingw-w64-x86_64-SDL2 mingw-w64-x86_64-SDL2_ttf
+        echo "SDL2_DIR=/mingw64/lib/cmake/SDL2" >> $GITHUB_ENV
+        echo "SDL2_TTF_DIR=/mingw64/lib/cmake/SDL2_ttf" >> $GITHUB_ENV
+
+    - name: Configure CMake
+      shell: msys2 {0}
+      run: |
+        mkdir build
+        cd build
+        cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+
+    - name: Build
+      shell: msys2 {0}
+      run: |
+        cd build
+        cmake --build . --config ${{env.BUILD_TYPE}}
+
+    - name: Test
+      shell: msys2 {0}
+      run: |
+        cd build
+        ctest -C ${{env.BUILD_TYPE}}
