@@ -1,42 +1,42 @@
-name: Build with MinGW Makefiles and SDL2
+name: CMake Build with SDL2 and SDL2_ttf
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-    - name: Install MSYS2 and update packages
+    - name: Setup MSYS2
+      uses: msys2/setup-msys2@v1
+      with:
+        msys2-version: '202308'
+        update: true
+        packages: 'mingw-w64-x86_64-toolchain'
+
+    - name: Install SDL2 and SDL2_ttf
       run: |
-        choco install msys2 -params "/InstallDir=C:\tools\msys" -y
-        C:\tools\msys\usr\bin\bash -lc "pacman -Syu --noconfirm"
+        pacman -S --noconfirm mingw-w64-x86_64-SDL2 mingw-w64-x86_64-SDL2_ttf
 
-    - name: Install MinGW, SDL2, and SDL2_ttf
-      run: |
-        C:\tools\msys\usr\bin\bash -lc "pacman -S --noconfirm mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake"
-        C:\tools\msys\usr\bin\bash -lc "pacman -S --noconfirm mingw-w64-x86_64-SDL2 mingw-w64-x86_64-SDL2_ttf"
-
-    - name: Add MinGW64 to PATH
-      run: |
-        echo "C:\tools\msys\mingw64\bin" >> $env:GITHUB_PATH
-
-    - name: Set reusable strings
-      run: echo "build-output-dir=${{ github.workspace }}\build" >> $env:GITHUB_ENV
+    - name: Setup CMake
+      uses: scikit-build/scikit-build-action@v1
+      with:
+        cmake-version: '3.26.2'
 
     - name: Configure CMake
-      run: |
-        C:\tools\msys\usr\bin\bash -lc "cmake -B $env:GITHUB_WORKSPACE/build -G 'MinGW Makefiles' -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc -DCMAKE_BUILD_TYPE=Release -S $env:GITHUB_WORKSPACE"
+      run: cmake -Bbuild -G "MinGW Makefiles"
 
     - name: Build
-      run: C:\tools\msys\usr\bin\bash -lc "cmake --build $env:GITHUB_WORKSPACE/build"
+      run: cmake --build build
 
-    - name: Test
-      working-directory: ${{ env.GITHUB_WORKSPACE }}/build
-      run: C:\tools\msys\usr\bin\bash -lc "ctest"
+    - name: Run Tests
+      run: ctest --test-dir build
