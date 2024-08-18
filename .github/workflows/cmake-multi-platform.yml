@@ -15,24 +15,28 @@ jobs:
 
     - name: Install MSYS2 and update packages
       run: |
-        choco install msys2 -y
-        C:\msys64\usr\bin\bash -lc "pacman -Syu --noconfirm"
+        choco install msys2 -params "/InstallDir=C:\tools\msys" -y
+        C:\tools\msys\usr\bin\bash -lc "pacman -Syu --noconfirm"
 
     - name: Install MinGW, SDL2, and SDL2_ttf
       run: |
-        C:\msys64\usr\bin\bash -lc "pacman -S --noconfirm mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake"
-        C:\msys64\usr\bin\bash -lc "pacman -S --noconfirm mingw-w64-x86_64-SDL2 mingw-w64-x86_64-SDL2_ttf"
+        C:\tools\msys\usr\bin\bash -lc "pacman -S --noconfirm mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake"
+        C:\tools\msys\usr\bin\bash -lc "pacman -S --noconfirm mingw-w64-x86_64-SDL2 mingw-w64-x86_64-SDL2_ttf"
+
+    - name: Add MinGW64 to PATH
+      run: |
+        echo "C:\tools\msys\mingw64\bin" >> $env:GITHUB_PATH
 
     - name: Set reusable strings
       run: echo "build-output-dir=${{ github.workspace }}\build" >> $env:GITHUB_ENV
 
     - name: Configure CMake
       run: |
-        C:\msys64\usr\bin\bash -lc "cmake -B $env:GITHUB_WORKSPACE/build -G 'MinGW Makefiles' -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc -DCMAKE_BUILD_TYPE=Release -S $env:GITHUB_WORKSPACE"
+        C:\tools\msys\usr\bin\bash -lc "cmake -B $env:GITHUB_WORKSPACE/build -G 'MinGW Makefiles' -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc -DCMAKE_BUILD_TYPE=Release -S $env:GITHUB_WORKSPACE"
 
     - name: Build
-      run: C:\msys64\usr\bin\bash -lc "cmake --build $env:GITHUB_WORKSPACE/build"
+      run: C:\tools\msys\usr\bin\bash -lc "cmake --build $env:GITHUB_WORKSPACE/build"
 
     - name: Test
       working-directory: ${{ env.GITHUB_WORKSPACE }}/build
-      run: C:\msys64\usr\bin\bash -lc "ctest"
+      run: C:\tools\msys\usr\bin\bash -lc "ctest"
